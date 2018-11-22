@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.edu.ittepic.practica1_u4_denisseespinosa.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="JUEGO DE DADOS"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RONDA"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/ronda"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Iniciar"
+            android:padding="20dp"
+            android:id="@+id/iniciar"
+            android:onClick="iniciar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TURNO JUGADOR"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/turnoj"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="JUGADOR"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_looks_3_black_48dp"
+            android:visibility="invisible"
+            android:id="@+id/dado1j1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_looks_3_black_48dp"
+            android:visibility="invisible"
+            android:id="@+id/dado2j1"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView android:text="TIRO 1:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j1t1"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="TIRO 2:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j1t2"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="TIRO 3:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j1t3"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="TIRO 4:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j1t4"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="TOTAL:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j1t"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="JUGADOR"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_looks_3_black_48dp"
+            android:visibility="invisible"
+            android:id="@+id/dado1j2"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_looks_3_black_48dp"
+            android:visibility="invisible"
+            android:id="@+id/dado2j2"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView android:text="TIRO 1:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j2t1"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="TIRO 2:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j2t2"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="TIRO 3:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j2t3"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="TIRO 4:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j2t4"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="TOTAL:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j2t"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="JUGADOR"
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textSize="18dp"
+                android:textAlignment="center"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_looks_3_black_48dp"
+            android:visibility="invisible"
+            android:id="@+id/dado1j3"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_looks_3_black_48dp"
+            android:visibility="invisible"
+            android:id="@+id/dado2j3"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow>
+
+                <TextView android:text="TIRO 1:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j3t1"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="TIRO 2:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j3t2"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="TIRO 3:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j3t3"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="TIRO 4:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j3t4"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView android:text="TOTAL:"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+                <TextView android:id="@+id/j3t"
+                    android:textAlignment="center"
+                    android:textColor="#000000"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
